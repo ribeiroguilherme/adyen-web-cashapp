@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyStore Shop</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="header__logo" src="mystoredemo-logo.svg" />
+    </header>
+
+    <main>
+      <div class="checkout-form">
+        <h1 class="checkout_form__title">Payment options</h1>
+        <div id="adyen-checkout"></div>
+      </div>
+
+      <div class="checkout-divider"></div>
+
+      <div class="checkout-details">
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <div class="order-summary__title">Order summary</div>
+          <img class="order-summary__item-image" src="google-nest.png" alt="Google Nest" />
+          <div class="order-summary__item-description-title">Description</div>
+          <div class="order-summary__item-description">Google Nest Mini White Duo Pack</div>
+          <div class="order-summary__item-description-title">Order Reference</div>
+          <div class="order-summary__item-description">GOOGLE_PRODUCT_1337</div>
+          <hr class="order-summary__separator" />
+          <div class="order-summary__item-payment-label">Payment total</div>
+          <div class="order-summary__item-amount">$ 100.00 USD</div>
+        </div>
+
+        <!-- Customer details -->
+        <div class="customer-details">
+          <h1 class="customer-details__title">Customer details</h1>
+          <div class="customer-details__info">
+            <div>John Doe</div>
+            <div>+31 06 801 567 36</div>
+            <div>johndoe@adyen.com</div>
+          </div>
+          <div class="customer-details__shipping-title">Shipping address</div>
+          <div class="customer-details__info">Simon Carmiggeltstraat 6 - 50, 1011 DJ Amsterdam</div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
