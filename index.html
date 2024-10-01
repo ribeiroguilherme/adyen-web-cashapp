@@ -15,45 +15,30 @@
 
     <main>
       <div class="checkout-form">
-        <h1 class="checkout-form__title">Payment options</h1>
 
+        <fieldset>
+          <legend>Amount:</legend>
+          <div>
+            <input type="radio" id="amount1" name="amount" value="500" checked="checked"/>
+            <label for="amount1">USD 5.00</label>
+            <input type="radio" id="amount2" name="amount" value="1000" />
+            <label for="amount2">USD 10.00</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Integration type:</legend>
+          <div>
+            <input type="radio" id="integrationtype1" name="integrationtype" value="dropin" checked="checked" />
+            <label for="integrationtype1">Dropin</label>
+            <input type="radio" id="integrationtype2" name="integrationtype" value="components" />
+            <label for="integrationtype2">CashAppPay component</label>
+          </div>
+        </fieldset>
+
+        <h1 class="checkout-form__title">Payment options</h1>
         <div class="checkout-form__adyen-checkout" id="adyen-checkout"></div>
 
-        <div class="checkout-form__skeleton hide">
-          <div class="checkout-form__skeleton-item"></div>
-          <div class="checkout-form__skeleton-item"></div>
-          <div class="checkout-form__skeleton-item"></div>
-          <div class="checkout-form__skeleton-item"></div>
-        </div>
-      </div>
-
-      <div class="checkout-divider"></div>
-
-      <div class="checkout-details">
-        <!-- Order Summary -->
-        <div class="order-summary">
-          <div class="order-summary__title">Order summary</div>
-          <img class="order-summary__item-image" src="google-nest.png" alt="Google Nest" />
-          <div class="order-summary__item-description-title">Description</div>
-          <div class="order-summary__item-description">Google Nest Mini White Duo Pack</div>
-          <div class="order-summary__item-description-title">Order Reference</div>
-          <div class="order-summary__item-description">GOOGLE_PRODUCT_1337</div>
-          <hr class="order-summary__separator" />
-          <div class="order-summary__item-payment-label">Payment total</div>
-          <div class="order-summary__item-amount">$ 100.00 USD</div>
-        </div>
-
-        <!-- Customer details -->
-        <div class="customer-details">
-          <h1 class="customer-details__title">Customer details</h1>
-          <div class="customer-details__info">
-            <div>John Doe</div>
-            <div>+31 06 801 567 36</div>
-            <div>johndoe@adyen.com</div>
-          </div>
-          <div class="customer-details__shipping-title">Shipping address</div>
-          <div class="customer-details__info">Simon Carmiggeltstraat 6 - 50, 1011 DJ Amsterdam</div>
-        </div>
       </div>
     </main>
 

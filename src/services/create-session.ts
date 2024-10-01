@@ -1,6 +1,7 @@
-async function createSession({ countryCode, shopperLocale }: { countryCode: string; shopperLocale: string }) {
+async function createSession({ amount, countryCode, shopperLocale }: { amount: { value: number, currency: string } ,countryCode: string; shopperLocale: string }) {
   try {
     const body = {
+      amount,
       countryCode,
       shopperLocale,
     };

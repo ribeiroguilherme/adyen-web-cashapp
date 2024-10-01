@@ -1,6 +1,4 @@
-# @adyen/adyen-web GooglePay livestream integration demo
-
-Github repository used during the GooglePay integration livestream.
+# @adyen/adyen-web CashAppPay 
 
 ### Steps to run the project:
 

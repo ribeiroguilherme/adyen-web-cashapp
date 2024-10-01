@@ -17,11 +17,8 @@ app.post('/payments/session', async (req, res) => {
       merchantAccount: process.env.ADYEN_MERCHANT_ACCOUNT,
       shopperLocale: req.body.shopperLocale,
       countryCode: req.body.countryCode,
+      amount: req.body.amount,
       channel: 'Web',
-      amount: {
-        value: 10000,
-        currency: 'USD',
-      },
       returnUrl: 'https://your-company.com/checkout?shopperOrder=12xy..',
       reference: `ref-${new Date().getTime()}`,
     };

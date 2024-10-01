@@ -1,10 +1,10 @@
 {
-  "name": "adyen-google-pay-demo",
+  "name": "adyen-web-cashapp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite --port 3020\" \"nodemon server/index.cjs\" --names \"vite webapp,express server\"",
+    "dev": "concurrently \"vite --port 3020 --host 0.0.0.0\" \"nodemon server/index.cjs\" --names \"vite webapp,express server\"",
     "build": "tsc && vite build"
   },
   "devDependencies": {
@@ -18,6 +18,6 @@
     "vite": "^5.4.6"
   },
   "dependencies": {
-    "@adyen/adyen-web": "^6.2.0"
+    "@adyen/adyen-web": "^5.69.1"
   }
 }
